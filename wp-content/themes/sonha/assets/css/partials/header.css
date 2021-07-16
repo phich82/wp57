@@ -1,0 +1,24 @@
+/* Header */
+.logo {
+    margin-bottom: 30px;
+    line-height: 2em;
+}
+.logo .site-name {
+
+}
+.logo .site-name h1 {
+    margin: 0;
+    font-size: 0;
+}
+.logo .site-name a {
+    color: #4681DA;
+    font-size: 32px;
+    font-weight: bold;
+}
+.logo .site-description {
+    margin-top: -1em;
+    color: #868686;
+    font-family: serif;
+    font-size: 1.04em;
+    font-style: italic;
+}

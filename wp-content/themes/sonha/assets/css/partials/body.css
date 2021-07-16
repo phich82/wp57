@@ -1,0 +1,118 @@
+/* Website Columns */
+#container {
+    width: 1024px;
+    margin: 0 auto;
+    background: #ffffff;
+    border: 1px solid #d1d1d1;
+    padding: 10px 25px;
+}
+#content {
+    overflow: hidden;
+}
+#main-content {
+    width: 620px;
+    float: left;
+    margin-right: 10px;
+}
+#sidebar {
+    width: 320px;
+    float: right;
+    margin-left: 10px;
+    padding-left: 20px;
+}
+
+/* Custom Pagination */
+.custom-pagination ul li {
+    display: inline;
+}
+.custom-pagination ul li a {
+    padding: 5px 10px;
+    margin-left: 1px;
+    margin-right: 1px;
+    text-decoration: none;
+}
+.custom-pagination ul li.active a {
+    background-color: rgb(15, 108, 248);
+}
+.custom-pagination ul li a:hover {
+    background-color: rgb(45, 130, 249);
+}
+
+/* Comments */
+.comments textarea[name="comment"] {
+    flex: 1;
+    height: 100px;
+    padding: 3px 5px;
+}
+.comments .block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.comments .block input {
+    width: 45%;
+    height: 30px;
+    padding: 3px 5px;
+}
+.comments .comment-form-cookies-consent {
+    display: flex;
+}
+.comments .comment-form-cookies-consent input {
+    margin-right: 5px;
+}
+.comments .block button[type="submit"],
+.comments .block input[type="submit"] {
+    height: 40px;
+    width: 80px;
+    border-color: rgb(4, 215, 134) !important;
+    background-color: rgb(4, 222, 138);
+}
+.comments .comment-list {
+    margin-top: 20px;
+}
+.comments .comment-list .comment-total {
+    text-transform: uppercase;
+}
+.comments .comment-list .comment-block {
+    list-style: none;
+    border: 1px solid #c4c1c1;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.comments .comment-list .comment-block h5,
+.comments .comment-list .comment-block h6 {
+    margin: 0;
+    padding: 0;
+}
+.comments .comment-list .comment-block .comment-content {
+    flex: 1;
+    margin-left: 10px;
+}
+.comments .comment-list .comment-block .comment-date-reply {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.comments .comment-list .comment-block .comment-date-reply span {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.comments .comment-list .comment-block .comment-content h5,
+.comments .comment-list .comment-block .comment-content .content {
+    margin-bottom: 10px;
+}
+.comments .comment-list .comment-title h3 {
+    display: flex;
+    align-items: center;
+}
+.comments .comment-list .hide-comment-reply a {
+    margin-left: 3px;
+    margin-left: 3px;
+    padding: 1px 2px;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #f6591c;
+    text-decoration: none;
+}
