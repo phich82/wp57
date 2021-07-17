@@ -1,7 +1,9 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+    <?php if (!is_single()): ?>
     <div class="entry-thumbnail">
         <?php sonha_thumbnail(); ?>
     </div>
+    <?php endif; ?>
     <div class="entry-header">
         <?php sonha_entry_header(); ?>
         <?php sonha_entry_meta(); ?>

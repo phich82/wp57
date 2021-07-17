@@ -59,8 +59,8 @@ if (!function_exists('sonha_custom_pagination')) {
             'end_size'     => 2,
             'mid_size'     => 1,
             'prev_next'    => true,
-            'prev_text'    => '<i class="zmdi zmdi-chevron-left"></i>Prev',
-            'next_text'    => '<i class="zmdi zmdi-chevron-right"></i>Next',
+            'prev_text'    => '<i class="zmdi zmdi-chevron-left arrow-left"></i>Prev',
+            'next_text'    => 'Next<i class="zmdi zmdi-chevron-right arrow-right"></i>',
             'add_args'     => false,
             'add_fragment' => ''
         ]);
@@ -109,7 +109,7 @@ if (!function_exists('sonha_custom_comment_pagination')) {
             'mid_size'     => 1,
             'prev_next'    => true,
             'prev_text'    => '<i class="zmdi zmdi-chevron-left"></i>Prev',
-            'next_text'    => '<i class="zmdi zmdi-chevron-right"></i>Next',
+            'next_text'    => 'Next<i class="zmdi zmdi-chevron-right"></i>',
             'add_args'     => false,
 		    'add_fragment' => '#comments',
         ]);
@@ -147,7 +147,8 @@ if (!function_exists('sonha_custom_comment_pagination')) {
 if (!function_exists('sonha_thumbnail')) {
     function sonha_thumbnail($size = 'thumbnail') {
         if (!is_single() && has_post_thumbnail() && !post_password_required() || has_post_format('image')) {
-            echo '<figure class="post-thumbnail">'.the_post_thumbnail($size).'</figure>';
+            // echo '<figure class="post-thumbnail">'.the_post_thumbnail($size).'</figure>';
+            the_post_thumbnail($size);
         }
     }
 }

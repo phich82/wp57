@@ -21,9 +21,13 @@
     padding-left: 20px;
 }
 
-/* Custom Pagination */
+/********** Custom Pagination **********/
+.custom-pagination ul {
+    text-align: center;
+}
 .custom-pagination ul li {
     display: inline;
+    list-style: none;
 }
 .custom-pagination ul li a {
     padding: 5px 10px;
@@ -32,13 +36,23 @@
     text-decoration: none;
 }
 .custom-pagination ul li.active a {
-    background-color: rgb(15, 108, 248);
+    background-color: rgb(76,146,251);
+    font-weight: bold;
 }
 .custom-pagination ul li a:hover {
     background-color: rgb(45, 130, 249);
 }
+.custom-pagination ul li a i.arrow-left {
+    margin-right: 3px;
+    font-size: 12px;
+}
+.custom-pagination ul li a i.arrow-right {
+    margin-left: 3px;
+    font-size: 12px;
+}
+/********** End - Custom Pagination **********/
 
-/* Comments */
+/********** Comments **********/
 .comments textarea[name="comment"] {
     flex: 1;
     height: 100px;
@@ -116,3 +130,74 @@
     background-color: #f6591c;
     text-decoration: none;
 }
+/********** End - Comments **********/
+
+/************ Content ************/
+#content {
+    background-color: #ffffff;
+}
+#content #main-content article {
+    border: 1px solid rgb(215,212,212);
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: rgb(255,253,253);
+}
+#content #main-content article .entry-thumbnail {
+    float: left;
+    margin-right: 10px;
+    border: 0.5px solid grey;
+    height: 150px;
+}
+#content #main-content article .entry-header {
+    float: left;
+    margin-bottom: 20px;
+}
+#content #main-content article .entry-header .entry-meta {
+    margin: 20px 0;
+}
+#content #main-content article .entry-content {
+    clear: both;
+    padding-top: 10px;
+}
+#content #main-content article.post-video .entry-header {
+    float: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+#content #main-content article.post-video .entry-header h2 {
+    margin: 10px 0 0 0 !important;
+}
+#content #main-content article.post-video .entry-content {
+    text-align: center;
+}
+/************ Content ************/
+
+/************ Single Page ************/
+.entry-footer {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.author-box .author-avatar {
+    float: left;
+    margin-right: 5px;
+    border: 1px solid rgb(217,217,217);
+}
+.author-box h3 {
+    font-size: 20px;
+}
+.author-box p {
+    font-style: italic;
+}
+.related-posts {
+    clear: both;
+}
+.related-posts .related-post {
+    margin-bottom: 5px;
+}
+.related-posts .related-post a {
+    text-decoration: underline;
+}
+/************ End - Single Page ************/

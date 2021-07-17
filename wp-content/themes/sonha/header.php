@@ -50,7 +50,6 @@
                 'walker' => new Sonha_Custom_Nav_Walker(), // custom wp menu
             ]);
             ?>
-        </div>
-        <div>
+
             <?php get_search_form(); ?>
         </div>
