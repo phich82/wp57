@@ -173,6 +173,14 @@
 #content #main-content article.post-video .entry-content {
     text-align: center;
 }
+#content #main-content article.post-video .entry-content figure {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+#content #main-content article.post-video .entry-content figure iframe {
+    width: 100%;
+}
 /************ Content ************/
 
 /************ Single Page ************/
